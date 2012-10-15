@@ -12,7 +12,9 @@
 /* #undef HAVE_ALIGNED_ACCESS_REQUIRED */
 
 /* Define to 1 if you have the <byteswap.h> header file. */
-/* #undef ZZIP_HAVE_BYTESWAP_H */
+#ifndef ZZIP_HAVE_BYTESWAP_H 
+#define ZZIP_HAVE_BYTESWAP_H  1 
+#endif
 
 /* Define to 1 if you have the <direct.h> header file. */
 /* #undef HAVE_DIRECT_H */
@@ -164,6 +166,11 @@
 #define ZZIP_PACKAGE_TARNAME  "" 
 #endif
 
+/* Define to the home page for this package. */
+#ifndef ZZIP_PACKAGE_URL 
+#define ZZIP_PACKAGE_URL  "" 
+#endif
+
 /* Define to the version of this package. */
 #ifndef ZZIP_PACKAGE_VERSION 
 #define ZZIP_PACKAGE_VERSION  "" 
@@ -191,7 +198,7 @@
 
 /* Version number of package */
 #ifndef ZZIP_VERSION 
-#define ZZIP_VERSION  "0.13.57" 
+#define ZZIP_VERSION  "0.13.62" 
 #endif
 
 /* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most

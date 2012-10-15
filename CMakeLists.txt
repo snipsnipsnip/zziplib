@@ -69,6 +69,7 @@ set(HEADERS zzip/__debug.h
             zzip/types.h
             zzip/write.h
             zzip/zzip.h
+            zzip/zzip32.h
 )
 
 # List the source files
